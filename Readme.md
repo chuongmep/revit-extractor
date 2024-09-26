@@ -1,3 +1,14 @@
+
+![Platform](https://img.shields.io/badge/platform-Windows/MacOS/Linux-lightgray.svg) [![License: GNU v3](https://img.shields.io/badge/License-GNU-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+![PyPI](https://img.shields.io/pypi/v/revit-extractor?label=pypi%20revit-extractor-python)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/revit-extractor?label=pipy-download)
+
+<a href="https://twitter.com/intent/follow?screen_name=chuongmep">
+<img src="https://img.shields.io/twitter/follow/chuongmep?style=social&logo=twitter"
+alt="follow on Twitter"></a>
+
 ## Revit Extractor
 
 Revit Extractor is a library that allows you to export native data from Revit files without needing to open Revit. It’s particularly useful for extracting data from Revit files and integrating it into other systems.
