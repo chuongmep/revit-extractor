@@ -20,6 +20,7 @@ Revit Extractor is a library that allows you to export native data from Revit fi
 
 - Make sure you have Revit installed on your machine.
 - Make sure you have Python installed on your machine version `3.9` or later.
+- Make sure you are running on Windows Platform. MacOS and Linux are not supported. 
 
 ## How to use
 
