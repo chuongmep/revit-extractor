@@ -29,3 +29,14 @@ categories = prodb.get_all_categories()
 for key in categories:
     print(key, categories[key])
 ```
+
+- Extract data by category and parameter
+```python
+from revit_extract import RevitExtractor
+rvt_path = r"D:\_WIP\Download\Sample Office Building Model V1.rvt"
+prodb = RevitExtractor(rvt_path).read_prob_data()
+categories =["Walls", "Doors"]
+params = ["Name", "Type", "Level"]
+data_frame = prodb.get_data_by_categories_and_params(categories, params)
+data_frame.to_excel("output.xlsx", index=False)
+```
