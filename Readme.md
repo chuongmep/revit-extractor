@@ -70,6 +70,15 @@ More ???
 
 - Geometry data is limit supported to read at the moment (But can export and use APS-Toolkit)
 
+## Disclaimer
+
+This is not an official Autodesk product to support for [Autodesk Platform Services](https://aps.autodesk.com/). Use it at your own risk.
+
+I'm not responsible for any data loss or any other issues caused by using this library, some features need require cost for using. Please read carefully the Autodesk Forge and Autodesk Platform Services terms of use. I'm just doing, testing , maintaining in free time, so feel free to contribute and make it better.
+
+## License
+
+This project is licensed under the GNU v3 License - see the [LICENSE](LICENSE) file for details
 
 ## References
 
