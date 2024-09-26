@@ -61,8 +61,13 @@ data_frame = prodb.get_data_by_categories_and_params(categories, params)
 data_frame.to_excel("output.xlsx", index=False)
 ```
 
-More ??? 
+More ???
 
+## Limitation
+
+- Export Schedule table data is not supported with svf format.
+
+- Geometry data is limit supported to read at the moment (But can export and use APS-Toolkit)
 
 
 ## References
