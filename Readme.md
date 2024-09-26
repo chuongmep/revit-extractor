@@ -1,11 +1,11 @@
 ## Revit Extractor
 
-This is a library allow export native data from Revit file without Open Revit, it's useful for extract data from Revit file to another system.
+Revit Extractor is a library that allows you to export native data from Revit files without needing to open Revit. It’s particularly useful for extracting data from Revit files and integrating it into other systems.
 
 ![](./samples/background.png)
 
 
-## Requirement
+## Requirements
 
 - Make sure you have Revit installed on your machine.
 - Make sure you have Python installed on your machine version `3.9` or later.
@@ -17,7 +17,16 @@ This is a library allow export native data from Revit file without Open Revit, i
 pip install revit-extractor --upgrade
 ```
 
-2. Use the library in your code:
+2. Get Revit Version 
+
+```
+from revit_extract import RevitExtractor
+rvt_path = r"D:\_WIP\Download\Sample Office Building Model V1.rvt"
+version = RevitExtractor.get_version(rvt_path)
+print(version)
+```
+
+3. Use the library in your code:
 
 - Extract all categories from Revit file:
 
@@ -30,7 +39,7 @@ for key in categories:
     print(key, categories[key])
 ```
 
-- Extract data by category and parameter
+- Extract data by categories and parameters from Revit file:
 ```python
 from revit_extract import RevitExtractor
 rvt_path = r"D:\_WIP\Download\Sample Office Building Model V1.rvt"
@@ -40,3 +49,11 @@ params = ["Name", "Type", "Level"]
 data_frame = prodb.get_data_by_categories_and_params(categories, params)
 data_frame.to_excel("output.xlsx", index=False)
 ```
+
+More ??? 
+
+
+
+## References
+
+- [Use Revit Extractor](https://chuongmep.com/posts/2024-09-25-revit-extractor.html)
