@@ -4,7 +4,7 @@ with open("Readme.md") as f:
         readme = f.read()
 setup(
     name='revit-extractor',
-    version='0.1.1',
+    version='0.1.2',
     description='A Library allow extract revit without open revit',
     long_description=readme,
     long_description_content_type="text/markdown",

@@ -62,7 +62,7 @@ data_frame = prodb.get_data_by_categories_and_params(categories, params)
 data_frame.to_excel("output.xlsx", index=False)
 ```
 
-More ???
+Check [Example Files](./samples/Demo.ipynb)
 
 ## Limitation
 

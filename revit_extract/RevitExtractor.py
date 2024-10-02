@@ -69,10 +69,10 @@ class RevitExtractor:
         with olefile.OleFileIO(rvt_file) as rvt_ole:
             bfi = rvt_ole.openstream("BasicFileInfo")
             file_info = bfi.read().decode("utf-16le", "ignore")
-            pattern = re.compile(r"\d{4}")
+            pattern = r"\x04\x00(\d{4})"
             match = re.search(pattern, file_info)
             if match:
-                return match.group(0)
+                return match.group(1)
             else:
                 print("No version found in file info.")
                 return None
