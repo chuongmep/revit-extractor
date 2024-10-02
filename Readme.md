@@ -78,8 +78,11 @@ I'm not responsible for any data loss or any other issues caused by using this l
 
 ## License
 
-This project is licensed under the GNU v3 License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the GNU v3 License - see the [LICENSE](./License.md) file for details
 
 ## References
 
 - [Use Revit Extractor](https://chuongmep.com/posts/2024-09-25-revit-extractor.html)
+
+## Disclaimer
+This is not an official method recommended by Autodesk, for academic purposes only, please use [Design Automation](https://aps.autodesk.com/en/docs/design-automation/v3/tutorials/revit/) or official support services from Autodesk like [AEC Data Model API](https://aps.autodesk.com/autodesk-aec-data-model-api)
