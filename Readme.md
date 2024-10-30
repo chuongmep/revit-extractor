@@ -70,6 +70,16 @@ Check [Example Files](./samples/Demo.ipynb)
 
 - Geometry data is limit supported to read at the moment (But can export and use APS-Toolkit)
 
+
+## Development
+
+- Clone the repository
+- Install the dependencies by running `pip install -r requirements.txt`
+- Run the tests by running `pytest`
+- Make your changes
+
+I'm happy to accept pull requests and contributions. If you have any questions, feel free to ask.
+
 ## Disclaimer
 
 This is not an official Autodesk product to support for [Autodesk Platform Services](https://aps.autodesk.com/). Use it at your own risk.
