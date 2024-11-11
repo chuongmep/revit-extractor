@@ -43,7 +43,7 @@ Bulk Extract All Models Version :
 import os
 import pandas as pd
 from revit_extract import RevitExtractor
-path = "D:\Development\Revit\Project\F10A\Electrical"
+path = "D:\Development\Revit\Project\XXX\Electrical"
 def get_files(path):
     df = pd.DataFrame(columns=['File', 'Version'])
     for r, d, f in os.walk(path):
