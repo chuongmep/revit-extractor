@@ -31,11 +31,29 @@ pip install revit-extractor --upgrade
 
 2. Get Revit Version 
 
-```
+```py
 from revit_extract import RevitExtractor
 rvt_path = r"D:\_WIP\Download\Sample Office Building Model V1.rvt"
 version = RevitExtractor.get_version(rvt_path)
 print(version)
+```
+Bulk Extract All Models Version : 
+
+```python
+import os
+import pandas as pd
+from revit_extract import RevitExtractor
+path = "D:\Development\Revit\Project\F10A\Electrical"
+def get_files(path):
+    df = pd.DataFrame(columns=['File', 'Version'])
+    for r, d, f in os.walk(path):
+        for file in f:
+            if '.rvt' in file:
+                version = RevitExtractor.get_version(os.path.join(r, file))
+                df.loc[len(df)] = [file, version]
+    return df
+df = get_files(path)
+df.head()
 ```
 
 3. Use the library in your code:
